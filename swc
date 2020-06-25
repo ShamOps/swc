@@ -54,12 +54,12 @@ read -p "${bt}${green} ~ Wordlist Name: ${white}" name
 touch "$name.txt"
 read -r -p "${bt}${green} ~ Enter Words Sperated By Space: ${white}" -a arr
 for wl in "${arr[@]}"; do 
-   echo "$wl" >> $name
+   echo "$wl" >> $name.txt
 done
 echo
 list="$name"
-if [[ -f $name ]]; then
-    echo "${pink}${bt} ~ $name Wordlist Created Successfully!"
+if [[ -f $name.txt ]]; then
+    echo "${pink}${bt} ~ $name.txt Wordlist Created Successfully!"
 else
     
     echo "${red}${bt} ~ Sorry, Failed To Create Wordlist"
