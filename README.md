@@ -1,7 +1,7 @@
 # swc
 # Shadow Wordlist Creator
 
-A Simple Script To Which Will Create Wordlist For Brute Force Attacks
+A Simple Script Which Will Create Wordlist For Brute Force Attacks
 
 INSTALLATION:
 
