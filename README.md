@@ -17,5 +17,7 @@ bash install.sh
 
 
 That's All
+
 Subscribe My Channel: https://tiny.cc/ShadowYT
+
 Facebook: https://facebook.com/ShadowWalkerYT
