@@ -50,16 +50,18 @@ echo -e "     $bt $white$bbg Developed By Ihtisham Ali - Shadow Walker $reset"
 
 
 echo "${bt}"
-echo "${cyan}$bt ~ YouTube: ${yellow}https://youtube.com/ShadowWalkerYT"
+echo "${cyan}$bt • YouTube: ${yellow}https://youtube.com/ShadowWalkerYT"
 
-echo "${cyan} $bt~ GitHub: ${yellow}https://github.com/ShadowWalker005"
+echo "${cyan}$bt • GitHub: ${yellow}https://github.com/ShadowWalker005"
 
-echo "${cyan} $bt~ Facebook: ${yellow}https://facebook.com/ShadowWalkerYT"
+echo "${cyan}$bt • Facebook: ${yellow}https://facebook.com/ShadowWalkerYT"
 
-echo "${cyan}$bt ~ Blogspot: ${yellow}https://shadowhub.blogspot.com"
+echo "${cyan}$bt • Blogspot: ${yellow}https://shadowhub.blogspot.com"
 
-
-
+echo
+echo
+echo "${blue}=========================================="
+echo
 read -p "${bt}${green} ~ Wordlist Name: ${white}" name
 touch "$name.txt"
 read -r -p "${bt}${green} ~ Enter Words Sperated By Space: ${white}" -a arr
@@ -67,14 +69,17 @@ for wl in "${arr[@]}"; do
    echo "$wl" >> $name.txt
 done
 echo
+echo "${blue}=========================================="
+echo
 list="$name"
 if [[ -f $name.txt ]]; then
-    echo "${pink}${bt} ~ $name.txt Wordlist Created Successfully!"
-    echo "${pink}${bt} ~ Copy Below Path To Use Your Wordlist:${yellow}"
-    readlink -f $name.txt
+    echo "${cyan}${bt} • $name.txt Wordlist Created Successfully!"
+    echo 
+    path=$(readlink -f $name.txt)
+    echo " ${cyan}${bt}Copy This: ${yellow}$path"
     echo "${reset}"
 else
     
-    echo "${red}${bt} ~ Sorry, Failed To Create Wordlist"
+    echo "${red}${bt} • Sorry, Failed To Create Wordlist"
 fi
 echo
