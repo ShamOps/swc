@@ -1,8 +1,6 @@
 #!/bin/bash
 
 
-#!/bin/bash
-
 #text colors
 
 red=$(tput setaf 1)
@@ -12,13 +10,31 @@ blue=$(tput setaf 4)
 pink=$(tput setaf 5)
 cyan=$(tput setaf 6)
 white=$(tput setaf 7)
+black="\e[30m"
+gray="\e[37m"
 
 bt=$(tput bold 2)
 #reset color
 
 reset=$(tput sgr0)
 
+#decoration
+
+unli="\e[4m"
+blink="\e[25m"
+#background colors
+
+rbg="\e[101m"
+wbg="\e[107m"
+cbg="\e[106m"
+pbg="\e[105m"
+gbg="\e[102m"
+bbg="\e[104m"
+
 clear
+
+#banner for shadow
+
 
 #banner for shadow
 
@@ -29,25 +45,19 @@ echo "${red}╚█████╗░███████║██████�
 echo "${red}░╚═══██╗██╔══██║██╔══██║██║░░██║██║░░██║░░████╔═████║░"
 echo "${red}██████╔╝██║░░██║██║░░██║██████╔╝╚█████╔╝░░╚██╔╝░╚██╔╝░"
 echo "${red}╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░╚═╝░░"
+echo -e "     $bt $white$bbg Developed By Ihtisham Ali - Shadow Walker $reset"
 
 
-#code
-echo "${yellow}${bt}"
-echo "                 ╔═════•|✿|•═════╗"
-echo "                   Shadow Walker"
-echo "                 ╚═════•|✿|•═════╝"
-echo "${reset}"
+
 echo "${bt}"
-echo "${cyan} ~ Script Made By Ihtisham Ali (Shadow Walker)"
+echo "${cyan}$bt ~ YouTube: ${yellow}https://youtube.com/ShadowWalkerYT"
 
-echo "${cyan} ~ YouTube Channel Link: https://tiny.cc/ShadowYT"
+echo "${cyan} $bt~ GitHub: ${yellow}https://github.com/ShadowWalker005"
 
-echo "${cyan} ~ Instagram: ShadowWalker143"
+echo "${cyan} $bt~ Facebook: ${yellow}https://facebook.com/ShadowWalkerYT"
 
-echo "${cyan} ~ Facebook: ShadowWalkerYT"
-echo
-echo "${cyan} ~ Shadow Wordlist Creator"
-echo 
+echo "${cyan}$bt ~ Blogspot: ${yellow}https://shadowhub.blogspot.com"
+
 
 
 read -p "${bt}${green} ~ Wordlist Name: ${white}" name
@@ -60,6 +70,9 @@ echo
 list="$name"
 if [[ -f $name.txt ]]; then
     echo "${pink}${bt} ~ $name.txt Wordlist Created Successfully!"
+    echo "${pink}${bt} ~ Copy Below Path To Use Your Wordlist:${yellow}"
+    readlink -f $name.txt
+    echo "${reset}"
 else
     
     echo "${red}${bt} ~ Sorry, Failed To Create Wordlist"
