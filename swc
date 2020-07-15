@@ -76,10 +76,10 @@ if [[ -f $name.txt ]]; then
     echo "${cyan}${bt} • $name.txt Wordlist Created Successfully!"
     echo 
     path=$(readlink -f $name.txt)
-    echo " ${cyan}${bt}Copy This: ${yellow}$path"
+    echo "${cyan}${bt} • Copy This: ${yellow}$path"
     echo "${reset}"
 else
     
-    echo "${red}${bt} • Sorry, Failed To Create Wordlist"
+    echo "${red}${bt} ~ Sorry, Failed To Create Wordlist"
 fi
 echo
