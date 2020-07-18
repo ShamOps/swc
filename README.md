@@ -1,23 +1,39 @@
-# swc
-# Shadow Wordlist Creator
+## SWC - Shadow Wordlist Creator
 
-A Simple Script Which Will Create Wordlist For Brute Force Attacks
+**Wordlist Creator For Brute Force**
 
-INSTALLATION:
+***Don't Copy Without Giving Me Credit! Script Kiddie xD***
 
-pkg update && pkg install git
-
-git clone https://github.com/shadowwalker005/swc
-
-cd swc && chmod 777 *
-
-bash install.sh
+**Show Some Support By Subscribing My Channel** [SUBSCRIBE](https://youtube.com/ShadowWalkerYT)
 
 
 
 
-That's All
+# INSTALLATION:
 
-Subscribe My Channel: https://tiny.cc/ShadowYT
+> pkg update
 
-Facebook: https://facebook.com/ShadowWalkerYT
+> pkg install git
+
+> git clone https://github.com/shadowwalker005/swc
+
+> cd swc
+
+> bash install.sh
+
+*Now Type _swc_ To Run The Script**
+
+## Developed By:
+- Ihtisham Ali aka Shadow Walker
+## Links:
+- YouTube Channel: [Shadow Walker](https://youtube.com/ShadowWalkerYT)
+- Facebook: [S. Walker](https://facebook.com/ShadowWalkerYT)
+- Blogspot: [ShadowHub]( https://shadowhub.blogspot.com)
+
+
+
+**In Case Of Any Issues Please Feel Free To Contact Me**
+
+**Also Check Out My YouTube Channel:** [Shadow Walker](https://youtube.com/ShadowWalkerYT)
+
+
